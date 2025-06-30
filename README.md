@@ -1,8 +1,15 @@
-#!/bin/bash
+# 0x00-shell_basics
 
-# Shell Permissions Project
+## 0. Where Am I?
+**Task:** Write a script that prints the absolute path name of the current working directory.
 
-## Overview
-This project focuses on understanding and managing file permissions in Linux, a crucial aspect of system security. It covers the basics of file ownership, user roles, and permission settings, including how to change permissions for files and directories.
+### Requirements:
+- Script must be named `0-current_working_directory`
+- Must output the absolute path when executed
+- Should be exactly 2 lines long
+- Cannot use certain special characters (backticks, &&, ||, or ;)
 
-## Project Structure
+### Example:
+```bash
+$ ./0-current_working_directory
+/home/user/alx-system_engineering-devops/0x00-shell_basics
