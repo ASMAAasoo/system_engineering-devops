@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
-# This script lists non-hidden files in the current directory using a for loop,
-# and displays only the part after the first dash in each filename
+# This script checks the status of a file named 'school'
 
-for file in *; do
-  # Only process files that contain a dash
-  if [[ "$file" == *-* ]]; then
-    echo "${file#*-}"
+if [ ! -e school ]; then
+  echo "school file doesn't exist"
+elif [ -d school ]; then
+  echo "school is a directory"
+elif [ -f school ]; then
+  if [ ! -s school ]; then
+    echo "school file exists and is empty"
+  else
+    echo "school file exists"
   fi
-done
+else
+  echo "school file doesn't exist"
+fi
