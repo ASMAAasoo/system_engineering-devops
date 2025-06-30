@@ -1,2 +1,2 @@
 #!/bin/bash
-read x&&echo "- PRF-PL-FP1-"&&echo "- PRF-PL-FP1-"&&echo "- QRW-PL-FP1-"&&echo "- QRW-PL-FP1-"&&echo "- QRW-PL-FP1-"&&echo "- QRW-PL-FP1-"&&echo "(66 chars long)"
+echo "- PRF-PL-FP1-";echo "- PRF-PL-FP1-";echo "- QRW-PL-FP1-";echo "- QRW-PL-FP1-";echo "- QRW-PL-FP1-";echo "- QRW-PL-FP1-";echo "(66 chars long)"
