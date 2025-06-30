@@ -1,15 +1,16 @@
-# 0x00-shell_basics
+# 0x00-shell_basics - 0. Where Am I?
 
-## 0. Where Am I?
-**Task:** Write a script that prints the absolute path name of the current working directory.
+This project directory contains the solution for the first task in the ALX Shell Basics project.
 
-### Requirements:
-- Script must be named `0-current_working_directory`
-- Must output the absolute path when executed
-- Should be exactly 2 lines long
-- Cannot use certain special characters (backticks, &&, ||, or ;)
+## Task 0: Where am I?
+**Script Name:** `0-current_working_directory`
 
-### Example:
+**Requirements:**
+- Prints the absolute path of the current working directory
+- Must be exactly 2 lines long
+- Cannot use: backticks, &&, ||, or ;
+
+**Example Usage:**
 ```bash
 $ ./0-current_working_directory
 /home/user/alx-system_engineering-devops/0x00-shell_basics
