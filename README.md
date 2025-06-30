@@ -1,2 +1,6 @@
-# Shell Basics Project
-This repository contains scripts for learning shell navigation and file management basics in Linux.
+# Shell Permissions Project
+
+## Overview
+This project focuses on understanding and managing file permissions in Linux, a crucial aspect of system security. It covers the basics of file ownership, user roles, and permission settings, including how to change permissions for files and directories.
+
+## Project Structure
