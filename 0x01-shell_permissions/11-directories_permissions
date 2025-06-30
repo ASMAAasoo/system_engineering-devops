@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "- PRF-PL-FP1-";echo "- PRF-PL-FP1-";echo "- QRW-PL-FP1-";echo "- QRW-PL-FP1-";echo "- QRW-PL-FP1-";echo "- QRW-PL-FP1-";echo "(66 chars long)"
+find . -mindepth 1 -maxdepth 1 -type d -exec chmod a+x {} +
