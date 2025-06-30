@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Shell Permissions Project
 
 ## Overview
