@@ -1,2 +1,5 @@
-#!/bin/bash
-tr -d '\r' < iacta | tail -n +3 | head -n 1
+#!/usr/bin/env bash
+# displays the third line of the file 'iacta' in the current directory
+
+# Using head + tail avoids sed
+head -n 3 iacta | tail -n 1
