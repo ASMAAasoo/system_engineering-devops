@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 # This script displays the content of the current directory, showing only the part of the filename after the first dash (-)
-# Check if any files match the glob pattern (not empty folder)
-shopt -s nullglob  # Prevents "no match" error when no files match
-files=( *-* )  # Array of files containing a dash
-shopt -u nullglob  # Restore default glob behavior
-
-# If files exist, process them
-if [ ${#files[@]} -gt 0 ]; then
-  for file in "${files[@]}"
-  do
-    # Extract the part of the filename after the first dash using parameter expansion
-    echo "${file#*-}"
-  done
-fi
+for file in *-*  # This matches all files containing at least one dash (-)
+do
+  # Extract and display the part of the filename after the first dash using parameter expansion
+  echo "${file#*-}"
+done
