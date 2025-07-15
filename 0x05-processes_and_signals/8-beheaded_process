@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A Bash script that forcefully kills the 7-highlander process.
+
+# Use 'pkill' with the '-9' option to send the SIGKILL signal (signal number 9).
+# SIGKILL is an unblockable and uncatchable signal that immediately terminates
+# the target process, without allowing it to perform any cleanup.
+# The '-f' option ensures that the full command line is matched,
+# specifically targeting the '7-highlander' script.
+pkill -9 -f "7-highlander"
