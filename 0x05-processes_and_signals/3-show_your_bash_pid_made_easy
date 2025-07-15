@@ -1,4 +1,16 @@
 #!/usr/bin/env bash
-# A Bash script that displays the PID and process name of all processes containing the word "bash"
+# Display PID and process name of processes whose name contains the word bash
 
-grep bash /proc/*/comm 2>/dev/null | cut -d/ -f3,5 | tr '/' ' '
+# shellcheck disable=SC2009
+
+for pid in /proc/[0-9]*; do
+    pid_num=$(basename "$pid")
+    # Get process name from /proc/<pid>/comm or /proc/<pid>/cmdline
+    if [ -r "$pid/comm" ]; then
+        pname=$(cat "$pid/comm")
+        # Check if process name contains 'bash'
+        if [[ "$pname" == *bash* ]]; then
+            echo "$pid_num $pname"
+        fi
+    fi
+done
