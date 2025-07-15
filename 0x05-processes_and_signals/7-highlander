@@ -2,9 +2,14 @@
 # A Bash script that displays "To infinity and beyond" indefinitely,
 # and "I am invincible!!!" when it receives a SIGTERM signal.
 
-trap 'echo "I am invincible!!!"' SIGTERM
+# Trap the SIGTERM signal (signal number 15).
+# Redirect the output of the echo command to standard error (>&2).
+trap 'echo "I am invincible!!!" >&2' SIGTERM
 
+# Start an infinite loop.
 while true; do
+    # Display the primary message to standard output.
     echo "To infinity and beyond"
+    # Pause execution for 2 seconds.
     sleep 2
 done
