@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A Bash script that stops the 4-to_infinity_and_beyond process without using kill or killall.
+
+# Use 'pkill' to send a termination signal to the process whose command line
+# matches '4-to_infinity_and_beyond'.
+# 'pkill' by default sends SIGTERM (signal 15), which is a polite request to terminate.
+# The '-f' option allows matching against the full command line, not just the process name.
+pkill -f "4-to_infinity_and_beyond"
